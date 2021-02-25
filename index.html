@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Image Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+          <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> 
+            <link rel="stylesheet" href="style.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1 class="heading btn btn-default">Image Recognizer!</h1>
+                <br><br>
+                <h3>Model is trained to recognize the following objects</h3>
+                <br><br>
+                <b id="object-list">
+                    Book
+                    <hr>
+                    Doll
+                    <hr>
+                    Me
+                    <hr>
+                    Phone
+                    <hr>
+                    Plug
+                   </b>
+                   <br><br>
+                   <label>Webcam:</label>
+                   <br> <br>
+                   <div id="webcam"></div>
+                   <br><br>
+                   <div id="result"></div>
+                   <br><br>
+                   <button class="btn btn-primary" onclick="take_snapshot()">Capture Image</button>
+                   <br><br>
+                   <button class="btn btn-success" onclick="check()">Identify Image</button>
+                   <br>
+                   <br>
+                   <label>Object:<span id="result-object"></span></label>
+                   <br><br>
+                   <label>Accuracy:<span id="identification-accuracy"></span></label>
+            </center>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

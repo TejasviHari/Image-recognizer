@@ -1,0 +1,16 @@
+body{
+    color: black;
+    background-color: #5E4AE3;
+}
+
+.heading{
+    width: 100%;
+    font-size: 40px;
+}
+
+#webcam{
+border: black dashed 1px;
+width: 350px;
+height: 350px;
+}
+
